@@ -8,12 +8,15 @@
     "react-scripts": "^0.6.0"
   },
   "dependencies": {
+    "body-parser": "^1.16.0",
+    "express": "^4.14.1",
     "react": "^15.3.0",
     "react-dom": "^15.3.0",
     "react-redux": "^4.4.5",
     "redux": "^3.5.2",
     "redux-logger": "^2.6.1",
-    "redux-thunk": "^2.1.0"
+    "redux-thunk": "^2.1.0",
+    "request": "^2.79.0"
   },
   "scripts": {
     "start": "react-scripts start",
