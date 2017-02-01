@@ -10,6 +10,7 @@ export const getAllProducts = () => dispatch => {
   shop.getProducts(products => {
     dispatch(receiveProducts(products))
   })
+  shop.getPhotos();
 }
 
 const addToCartUnsafe = productId => ({

@@ -10,7 +10,7 @@ const API = {
   "admin_url": "https://439198291915981:Mkg4z0aSdewn1XlM79gNvxz1EwY@api.cloudinary.com/v1_1/clairephotography"
 }
 
-Server.use(Express.static(Path.join(__dirname + '/static')));
+Server.use(Express.static(Path.join(__dirname + '/public')));
 Server.use(BodyParser.json());
 
 Server.get('/', (req, res) => {
@@ -43,7 +43,7 @@ Server.get('/images', (req, res) => {
 
 let server;
 if (module === require.main) {
-  server = Server.listen(process.env.PORT || 8000, () => {
+  server = Server.listen(process.env.PORT || 3000, () => {
     const PORT = server.address().port;
       console.log('Node Server listening on port %s', PORT);
   });
